@@ -161,7 +161,7 @@ const workExperiences = {
     {
       role: "Investment Banking Analyst Intern",
       company: "Morgan Stanley",
-      companylogo: require("./assets/images/morgan_stanley.jpg"),
+      companylogo: require("./assets/images/ms.jpg"),
       date: "June 2024 – Aug 2024",
       desc: "",
       descBullets: [
