@@ -48,7 +48,7 @@ const skillsSection = {
   title: "My Story",
   subTitle: "a little bit about how i got here",
   skills: [
-    "I grew up attending a limited-resourced highschool in Michigan, without much exposure to careers in tech or finance. I figured things out one YouTube video, cold email, and late night at a time. That curiosity led me to explore Sillicon Valley, Wall Street, .",
+    "I grew up attending a limited-resourced highschool in Michigan, without much exposure to careers in tech or finance. I figured things out one YouTube video, cold email, and late night at a time. That curiosity led me to explore Sillicon Valley and Wall Street.",
     "I'm motivated by building tech that makes people’s lives easier — especially those who’ve been underserved. I founded GrowFi, a financial literacy app for students, and I’m always looking for ways to combine business, design, and engineering to spark upward mobility.",
     "Outside of work, you’ll find me watching anime, skimming through Zillow, trading on Robinhood, and making TikToks."
   ],
