@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/website/static/css/main.36b3feab.css",
-    "main.js": "/website/static/js/main.37cd2c2a.js",
+    "main.js": "/website/static/js/main.80d56fee.js",
     "static/css/64.bba8fa55.chunk.css": "/website/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/website/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/website/static/css/769.b3cbb36b.chunk.css",
@@ -16,14 +16,14 @@
     "static/media/pwc.jpg": "/website/static/media/pwc.0544f212a88edf22db21.jpg",
     "static/media/bipoc.jpeg": "/website/static/media/bipoc.3735811f744322028aac.jpeg",
     "static/media/contactMailDark.svg": "/website/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
-    "static/media/morgan_stanley.jpg": "/website/static/media/morgan_stanley.0d12385b60a595b40ac0.jpg",
     "static/media/microsoft_logo.jpeg": "/website/static/media/microsoft_logo.f710cd216cdfa92ccec9.jpeg",
+    "static/media/ms.jpg": "/website/static/media/ms.5482d7523e2c2f83c41b.jpg",
     "static/media/growfi_logo.png": "/website/static/media/growfi_logo.7435430989871725cb9c.png",
     "static/media/skill.svg": "/website/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "index.html": "/website/index.html",
     "static/media/talksCardBack.svg": "/website/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.36b3feab.css.map": "/website/static/css/main.36b3feab.css.map",
-    "main.37cd2c2a.js.map": "/website/static/js/main.37cd2c2a.js.map",
+    "main.80d56fee.js.map": "/website/static/js/main.80d56fee.js.map",
     "64.bba8fa55.chunk.css.map": "/website/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/website/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/website/static/css/769.b3cbb36b.chunk.css.map",
@@ -31,6 +31,6 @@
   },
   "entrypoints": [
     "static/css/main.36b3feab.css",
-    "static/js/main.37cd2c2a.js"
+    "static/js/main.80d56fee.js"
   ]
 }
