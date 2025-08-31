@@ -50,7 +50,7 @@ const skillsSection = {
   skills: [
     "I grew up attending a limited-resourced highschool in Michigan, without much exposure to careers in tech or finance. I figured things out one show (how I got into startups), cold email, and YouTube video at a time. That curiosity led me to explore Sillicon Valley and Wall Street.",
     "I'm motivated to build tech that makes people’s lives easier, especially those who’ve been underserved. I tend to build mini projects from an app that helps high school students explore careers, through tinder swiping, or an app that combines BeReal + Strava to motivate people, or a Duolingo but for finances",
-    "I’m always looking for ways to combine business, design, and engineering to spark upward mobility.",
+    "I’m always looking for ways to combine business, design, and engineering.",
     "Outside of work, you’ll find me watching anime, skimming through Zillow, trading on Robinhood, and making TikToks."
   ],
 
