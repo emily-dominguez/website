@@ -39,23 +39,6 @@ const Main = () => {
     }
   }, []);
 
-  useEffect(() => {
-    // Debug logging for component rendering
-    console.log("Main component rendered, splash animation:", isShowingSplashAnimation);
-    
-    if (!isShowingSplashAnimation) {
-      setTimeout(() => {
-        const experienceSection = document.getElementById('experience');
-        if (experienceSection) {
-          console.log("Experience section found in Main:", experienceSection);
-          console.log("Experience section styles:", window.getComputedStyle(experienceSection));
-        } else {
-          console.log("Experience section NOT found in Main");
-        }
-      }, 2000);
-    }
-  }, [isShowingSplashAnimation]);
-
   const changeTheme = () => {
     setIsDark(!isDark);
   };
