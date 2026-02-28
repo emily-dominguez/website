@@ -58,14 +58,6 @@ const skillsSection = {
     "Outside of work, I try new food, binge watch industry dramas, browse Zillow for fun, and tinker with investing."
   ],
 
-  
-  
-  
-  
-  
-  
-  
-  
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 

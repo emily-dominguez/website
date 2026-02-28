@@ -19,7 +19,7 @@ export default function Greeting() {
   useEffect(() => {
     if (titles.length <= 1) return;
     const id = setInterval(() => {
-      setCurrentIndex((i) => (i + 1) % titles.length);
+      setCurrentIndex(i => (i + 1) % titles.length);
     }, ROTATE_INTERVAL_MS);
     return () => clearInterval(id);
   }, [titles.length]);
@@ -41,7 +41,6 @@ export default function Greeting() {
                   {titles[currentIndex]}
                   <span className="wave-emoji">{emoji("👋")}</span>
                 </span>{" "}
-
               </h1>
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
