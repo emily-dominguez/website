@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, {useContext, useState, useEffect} from "react";
 import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
@@ -9,8 +9,21 @@ import Button from "../../components/button/Button";
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
+const ROTATE_INTERVAL_MS = 2500;
+
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
+  const titles = greeting.rotatingTitles || [];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    if (titles.length <= 1) return;
+    const id = setInterval(() => {
+      setCurrentIndex((i) => (i + 1) % titles.length);
+    }, ROTATE_INTERVAL_MS);
+    return () => clearInterval(id);
+  }, [titles.length]);
+
   if (!greeting.displayGreeting) {
     return null;
   }
@@ -23,19 +36,13 @@ export default function Greeting() {
               <h1
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
               >
-                {" "}
                 {greeting.title}{" "}
-                <span className="wave-emoji">{emoji("👋")}</span>
+                <span className="greeting-rotating-title" key={currentIndex}>
+                  {titles[currentIndex]}
+                  <span className="wave-emoji">{emoji("👋")}</span>
+                </span>{" "}
+
               </h1>
-              <p
-                className={
-                  isDark
-                    ? "dark-mode greeting-text-p"
-                    : "greeting-text-p subTitle"
-                }
-              >
-                {greeting.subTitle}
-              </p>
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
               <div className="button-greeting-div">

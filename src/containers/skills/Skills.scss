@@ -28,6 +28,14 @@
   color: $subTitle;
 }
 
+/* Boldness: 400 = normal, 500 = medium, 600 = semibold, 700 = bold */
+#skills .skills-text-subtitle {
+  font-weight: 800 !important;
+}
+#skills .skills-text {
+  font-weight: 400 !important;
+}
+
 /* Media Query */
 @media (max-width: 1380px) {
   .skills-heading {
@@ -56,6 +64,7 @@
   .skills-text-subtitle {
     font-size: 16px;
     text-align: center;
+    font-weight: 500; 
   }
   .skills-image-div {
     /* display: none; */

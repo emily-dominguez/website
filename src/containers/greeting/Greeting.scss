@@ -53,6 +53,24 @@
   line-height: 40px;
 }
 
+.greeting-rotating-title {
+  display: inline-block;
+  min-width: 2ch;
+  animation: greeting-rotate-in 0.4s ease-out;
+  color: rgb(211, 173, 230);
+}
+
+@keyframes greeting-rotate-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .greeting-image-div > img {
   max-width: 100%;
   height: auto;

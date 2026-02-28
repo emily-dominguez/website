@@ -21,10 +21,13 @@ const illustration = {
 
 const greeting = {
   username: "Emily Dominguez",
-  title: "Hi, I'm Emily!",
-  subTitle: emoji(
-    "I'm a first-gen, recent college graduate from the University of Michigan with a B.S. in Computer Science and a B.B.A in finance. I've interned across product, engineering, and finance at Apple, Microsoft, Morgan Stanley, and early-stage startups. I'm passionate about building tech that empowers people."
-  ),
+  title: "Hi I'm Emily, a",
+  rotatingTitles: [
+    "first-gen technologist ",
+    "0→1 product builder ",
+    "bridge between capital & code ",
+    "driven systems thinker "
+  ],
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -48,12 +51,21 @@ const skillsSection = {
   title: "My Story",
   subTitle: "A little bit about how I got here",
   skills: [
-    "I grew up attending a limited-resourced highschool in Michigan, without much exposure to careers in tech or finance. I figured things out one show (how I got into startups), cold email, and YouTube video at a time. That curiosity led me to explore Sillicon Valley and Wall Street.",
-    "I'm motivated to build tech that makes people’s lives easier, especially those who’ve been underserved. I tend to build mini projects from an app that helps high school students explore careers, through tinder swiping, or an app that combines BeReal + Strava to motivate people, or a Duolingo but for finances",
-    "I’m always looking for ways to combine business, design, and engineering.",
-    "Outside of work, you’ll find me watching anime, skimming through Zillow, trading on Robinhood, and making TikToks."
+    "I grew up attending a limited-resourced highschool in Michigan, with little exposure to careers in tech or finance. I discovered startups, venture capital, and product building through shows, YouTube, and cold emails.",
+    "That curiosity led me from from exploring Silicon Valley to working on Wall Street — experiences that shaped how I think about both building products and understanding markets.",
+    "I’m drawn to building tech that expands access and economic opportunity. Many of my side projects stem from this lens, from tools that help students explore careers more intentionally, to platforms that make financial literacy more engaging and actionable.",
+    "I’m most energized at the intersection of business, design, and engineering.",
+    "Outside of work, I try new food, binge watch industry dramas, browse Zillow for fun, and tinker with investing."
   ],
 
+  
+  
+  
+  
+  
+  
+  
+  
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
