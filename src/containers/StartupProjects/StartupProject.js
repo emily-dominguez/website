@@ -75,7 +75,10 @@ export default function StartupProject() {
                           rel="noopener noreferrer"
                         >
                           Learn more
-                          <span className="project-learn-more-btn__arrow" aria-hidden="true">
+                          <span
+                            className="project-learn-more-btn__arrow"
+                            aria-hidden="true"
+                          >
                             →
                           </span>
                         </a>

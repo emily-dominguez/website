@@ -241,7 +241,8 @@ const bigProjects = {
       slug: "growfi",
       image: require("./assets/images/growfi.png"),
       projectName: "GrowFi",
-      projectDesc: "A gamified mobile app that teaches finance through bite-sized and interactive lessonss, think Duolingo but for finances",
+      projectDesc:
+        "A gamified mobile app that teaches finance through bite-sized and interactive lessonss, think Duolingo but for finances",
       caseStudy: {
         tagline: "Co-founder · Personal project · 2025",
         links: [
@@ -254,12 +255,12 @@ const bigProjects = {
           "How can we bridge the financial literacy gap for underserved communities through engaging and actionable education?",
         solution:
           "An app designed to teach financial literacy in an engaging, action-based way—similar to how Duolingo teaches languages.",
-          solutionMedia: [
-            {
-              image: require("./assets/images/growfi_solution.png"),
-              alt: "GrowFi mobile app screen showing a What is Investing lesson with key points on a card"
-            }
-          ],
+        solutionMedia: [
+          {
+            image: require("./assets/images/growfi_solution.png"),
+            alt: "GrowFi mobile app screen showing a What is Investing lesson with key points on a card"
+          }
+        ],
         role: {
           design: [
             "Created wireframes in Figma for learning modules, quizzes, and in-app messaging; benchmarked UX patterns using Mobbin."
@@ -281,7 +282,7 @@ const bigProjects = {
             alt: "GrowFi marketing creative promoting the financial literacy app"
           }
         ],
-        techStack: "JavaScript, HTML/CSS",
+        techStack: "JavaScript, HTML/CSS"
       }
     },
     {
@@ -296,12 +297,12 @@ const bigProjects = {
           "How can we facilitate personalized online interactions while enhancing genuine in-person connections?",
         solution:
           "Bump helps people build relationships through personalized online and in-person touchpoints so digital discovery feels authentic and leads to real-world connection.",
-          solutionMedia: [
-            {
-              image: require("./assets/images/bump_solution.png"),
-              alt: "Bump mobile app screen showing a profile creation flow"
-            }
-          ],
+        solutionMedia: [
+          {
+            image: require("./assets/images/bump_solution.png"),
+            alt: "Bump mobile app screen showing a profile creation flow"
+          }
+        ],
 
         role: {
           design: [

@@ -50,9 +50,7 @@ export default function ProjectDetailPage() {
     return (
       <div
         className={
-          isDark
-            ? "project-detail-page dark-mode-page"
-            : "project-detail-page"
+          isDark ? "project-detail-page dark-mode-page" : "project-detail-page"
         }
       >
         <div className="project-detail-top">
@@ -72,9 +70,7 @@ export default function ProjectDetailPage() {
     return (
       <div
         className={
-          isDark
-            ? "project-detail-page dark-mode-page"
-            : "project-detail-page"
+          isDark ? "project-detail-page dark-mode-page" : "project-detail-page"
         }
       >
         <div className="project-detail-top">
@@ -117,7 +113,7 @@ export default function ProjectDetailPage() {
         {cs.tagline ? (
           <p className="project-detail-tagline">{cs.tagline}</p>
         ) : null}
-         {(cs.links && cs.links.length) ||
+        {(cs.links && cs.links.length) ||
         (cs.linksMedia && cs.linksMedia.length) ? (
           <section className="project-detail-section">
             {cs.links && cs.links.length ? (
@@ -139,7 +135,7 @@ export default function ProjectDetailPage() {
           </section>
         ) : null}
 
-        {(cs.problem || (cs.problemMedia && cs.problemMedia.length)) ? (
+        {cs.problem || (cs.problemMedia && cs.problemMedia.length) ? (
           <section className="project-detail-section">
             <h2>Problem</h2>
             {cs.problem ? <p>{cs.problem}</p> : null}
@@ -147,7 +143,7 @@ export default function ProjectDetailPage() {
           </section>
         ) : null}
 
-        {(cs.solution || (cs.solutionMedia && cs.solutionMedia.length)) ? (
+        {cs.solution || (cs.solutionMedia && cs.solutionMedia.length) ? (
           <section className="project-detail-section">
             <h2>Solution</h2>
             {cs.solution ? <p>{cs.solution}</p> : null}
@@ -187,14 +183,13 @@ export default function ProjectDetailPage() {
           </section>
         ) : null}
 
-        {(cs.techStack || (cs.techStackMedia && cs.techStackMedia.length)) ? (
+        {cs.techStack || (cs.techStackMedia && cs.techStackMedia.length) ? (
           <section className="project-detail-section">
             <h2>Tech stack</h2>
             {cs.techStack ? <p>{cs.techStack}</p> : null}
             <CaseStudySectionMedia items={cs.techStackMedia} />
           </section>
         ) : null}
-       
       </article>
     </div>
   );
