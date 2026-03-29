@@ -238,31 +238,126 @@ const bigProjects = {
   subtitle: "Some mini projects I've worked on that people got excited for",
   projects: [
     {
-      image: require("./assets/images/growfi_logo.png"),
+      slug: "growfi",
+      image: require("./assets/images/growfi.png"),
       projectName: "GrowFi",
-      projectDesc: "Duolingo but for finances and the underserved",
+      projectDesc: "A gamified mobile app that teaches finance through bite-sized and interactive lessonss, think Duolingo but for finances",
       footerLink: [
         {
           name: "Visit Website",
           url: "https://growfi.framer.website"
         }
-        //  you can add extra buttons here.
-      ]
+      ],
+      caseStudy: {
+        tagline: "Co-founder · Personal project · 2025",
+        links: [
+          {
+            name: "Website",
+            url: "https://growfi.framer.website"
+          }
+        ],
+        problem:
+          "How can we bridge the financial literacy gap for underserved communities through engaging and actionable education?",
+        solution:
+          "An app designed to teach financial literacy in an engaging, action-based way—similar to how Duolingo teaches languages.",
+          solutionMedia: [
+            {
+              image: require("./assets/images/growfi_solution.png"),
+              alt: "GrowFi mobile app screen showing a What is Investing lesson with key points on a card"
+            }
+          ],
+        role: {
+          design: [
+            "Created wireframes in Figma for learning modules, quizzes, and in-app messaging; benchmarked UX patterns using Mobbin."
+          ],
+          engineering: [
+            "Implemented learning module paths, reward system, and messaging features."
+          ],
+          product: [
+            "Conducted 20+ user interviews, authored the product spec, and ran early marketing to campus clubs to validate demand."
+          ]
+        },
+        outcome: [
+          "Achieved 100+ student sign-ups within 24 hours of launch.",
+          "Ranked in the top 10% of applicants to Y Combinator."
+        ],
+        outcomeMedia: [
+          {
+            image: require("./assets/images/growfi_marketing.png"),
+            alt: "GrowFi marketing creative promoting the financial literacy app"
+          }
+        ],
+        techStack: "JavaScript, HTML/CSS",
+      }
     },
     {
+      slug: "bump",
       image: require("./assets/images/bump.png"),
       projectName: "Bump",
-      projectDesc: "",
+      projectDesc:
+        " A way to connect with people near you and strengthen genuine in-person connections",
       footerLink: [
         {
           name: "Visit Prototype",
           url: "https://www.figma.com/proto/9BLxW94v6A9hyHAFNU0R5J/Bump--Copy-?node-id=14-301&p=f&t=qkrkYK2DrV841l2n-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=14%3A301"
         }
-      ]
+      ],
+      caseStudy: {
+        tagline: "ES 395 class project · Fall 2024",
+        problem:
+          "How can we facilitate personalized online interactions while enhancing genuine in-person connections?",
+        solution:
+          "Bump helps people build relationships through personalized online and in-person touchpoints so digital discovery feels authentic and leads to real-world connection.",
+          solutionMedia: [
+            {
+              image: require("./assets/images/bump_solution.png"),
+              alt: "Bump mobile app screen showing a profile creation flow"
+            }
+          ],
+
+        role: {
+          design: [
+            "Created profile creation, geolocation, and in-message wireframes in Figma; designed onboarding and profile flows focused on authenticity and ease of use."
+          ],
+          engineering: [
+            "Implemented profile creation, geolocation, and in-app messaging experiences."
+          ],
+          product: [
+            "Conducted user research with 50 students, synthesized insights into MVP scope, and authored the product spec."
+          ]
+        },
+        outcomeMedia: [
+          {
+            image: require("./assets/images/bump_marketing.png"),
+            alt: "Bump mobile app screen showing a profile creation flow"
+          }
+        ],
+        outcome: [
+          "Recognized as a top 3 project in the course.",
+          "Prototype validated as more engaging than standard dating apps in user testing."
+        ],
+
+        techStack: "JavaScript, HTML/CSS",
+        links: [
+          {
+            name: "Figma prototype",
+            url: "https://www.figma.com/proto/9BLxW94v6A9hyHAFNU0R5J/Bump--Copy-?node-id=14-301&p=f&t=qkrkYK2DrV841l2n-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=14%3A301"
+          }
+        ]
+      }
     }
   ],
   display: true // Set false to hide this section, defaults to true
 };
+
+function getBigProjectBySlug(slug) {
+  if (!slug || !bigProjects.projects) {
+    return null;
+  }
+  return bigProjects.projects.find(
+    p => p.slug && p.slug.toLowerCase() === slug.toLowerCase()
+  );
+}
 
 // Achievement Section
 // Include certificates, talks etc
@@ -287,7 +382,7 @@ const achievementSection = {
       ]
     },
     {
-      title: "BIPOC Builders - Co-founder/VP Partnerships",
+      title: "BIPOC Builders - Founding Team (VP Partnerships)",
       subtitle:
         "a community supporting Black and Hispanic students pursuing entrepreneurship (from small business owners to future startup founders)",
       image: require("./assets/images/bipoc.jpeg"),
@@ -396,6 +491,7 @@ export {
   workExperiences,
   openSource,
   bigProjects,
+  getBigProjectBySlug,
   achievementSection,
   blogSection,
   talkSection,

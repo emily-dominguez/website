@@ -82,6 +82,31 @@
   transition: 0.2s ease-in;
 }
 
+.project-card-footer a.project-tag-learn-more {
+  text-decoration: none;
+  background: transparent;
+  color: $buttonColor;
+  border: 2px solid $buttonColor;
+  box-sizing: border-box;
+}
+
+.project-card-footer a.project-tag-learn-more:hover {
+  background: rgba($buttonColor, 0.08);
+  color: $buttonHover;
+  border-color: $buttonHover;
+}
+
+.project-card-dark .project-card-footer a.project-tag-learn-more {
+  color: lighten($buttonColor, 35%);
+  border-color: lighten($buttonColor, 35%);
+}
+
+.project-card-dark .project-card-footer a.project-tag-learn-more:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: lighten($buttonHover, 20%);
+  border-color: lighten($buttonHover, 20%);
+}
+
 @media (max-width: 768px) {
   .project-subtitle {
     font-size: 16px;

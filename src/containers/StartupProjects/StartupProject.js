@@ -3,6 +3,7 @@ import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import {buildProjectDetailUrl} from "../../utils/projectDetailUrl";
 
 export default function StartupProject() {
   function openUrlInNewTab(url) {
@@ -65,23 +66,39 @@ export default function StartupProject() {
                     >
                       {project.projectDesc}
                     </p>
-                    {project.footerLink ? (
-                      <div className="project-card-footer">
-                        {project.footerLink.map((link, i) => {
-                          return (
-                            <span
-                              key={i}
-                              className={
-                                isDark ? "dark-mode project-tag" : "project-tag"
-                              }
-                              onClick={() => openUrlInNewTab(link.url)}
-                            >
-                              {link.name}
-                            </span>
-                          );
-                        })}
-                      </div>
-                    ) : null}
+                    <div className="project-card-footer">
+                      {project.slug && project.caseStudy ? (
+                        <a
+                          className={
+                            isDark
+                              ? "dark-mode project-tag project-tag-learn-more"
+                              : "project-tag project-tag-learn-more"
+                          }
+                          href={buildProjectDetailUrl(project.slug)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Learn more
+                        </a>
+                      ) : null}
+                      {project.footerLink
+                        ? project.footerLink.map((link, i) => {
+                            return (
+                              <span
+                                key={i}
+                                className={
+                                  isDark
+                                    ? "dark-mode project-tag"
+                                    : "project-tag"
+                                }
+                                onClick={() => openUrlInNewTab(link.url)}
+                              >
+                                {link.name}
+                              </span>
+                            );
+                          })
+                        : null}
+                    </div>
                   </div>
                 </div>
               );
