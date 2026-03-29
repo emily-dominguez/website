@@ -242,12 +242,6 @@ const bigProjects = {
       image: require("./assets/images/growfi.png"),
       projectName: "GrowFi",
       projectDesc: "A gamified mobile app that teaches finance through bite-sized and interactive lessonss, think Duolingo but for finances",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://growfi.framer.website"
-        }
-      ],
       caseStudy: {
         tagline: "Co-founder · Personal project · 2025",
         links: [
@@ -296,12 +290,6 @@ const bigProjects = {
       projectName: "Bump",
       projectDesc:
         " A way to connect with people near you and strengthen genuine in-person connections",
-      footerLink: [
-        {
-          name: "Visit Prototype",
-          url: "https://www.figma.com/proto/9BLxW94v6A9hyHAFNU0R5J/Bump--Copy-?node-id=14-301&p=f&t=qkrkYK2DrV841l2n-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=14%3A301"
-        }
-      ],
       caseStudy: {
         tagline: "ES 395 class project · Fall 2024",
         problem:

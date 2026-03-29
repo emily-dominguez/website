@@ -64,6 +64,92 @@
   gap: 1rem 1rem;
 }
 
+.project-card-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem 0.65rem;
+  margin-top: 0.75rem;
+}
+
+.project-learn-more-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  min-height: 2.375rem;
+  padding: 0.5rem 1.125rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 999px;
+  border: 1.5px solid $buttonColor;
+  color: $buttonColor;
+  background-color: transparent;
+  box-sizing: border-box;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.project-learn-more-btn__arrow {
+  font-size: 1em;
+  opacity: 0.85;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.project-learn-more-btn:hover {
+  color: $lightBackground3;
+  background-color: $buttonColor;
+  border-color: $buttonColor;
+  box-shadow: 0 6px 16px rgba($buttonColor, 0.32);
+  transform: translateY(-1px);
+}
+
+.project-learn-more-btn:hover .project-learn-more-btn__arrow {
+  opacity: 1;
+  transform: translateX(2px);
+}
+
+.project-learn-more-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba($buttonColor, 0.25);
+}
+
+.project-learn-more-btn:focus {
+  outline: none;
+}
+
+.project-learn-more-btn:focus-visible {
+  outline: 2px solid $buttonColor;
+  outline-offset: 3px;
+}
+
+.project-card-dark .project-learn-more-btn {
+  color: lighten($buttonColor, 42%);
+  border-color: rgba(255, 255, 255, 0.28);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.project-card-dark .project-learn-more-btn:hover {
+  color: $lightBackground3;
+  background-color: $buttonColor;
+  border-color: $buttonColor;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+.project-card-dark .project-learn-more-btn:focus-visible {
+  outline-color: lighten($buttonColor, 35%);
+}
+
 .project-card-footer span.project-tag {
   background: $buttonColor;
   color: $lightBackground3;
@@ -76,35 +162,10 @@
   justify-content: center;
   white-space: nowrap;
   line-height: 1.5;
-  margin: 0 0.5rem 0.5rem 0;
+  margin: 0;
   padding: 0 0.75em;
   cursor: pointer;
   transition: 0.2s ease-in;
-}
-
-.project-card-footer a.project-tag-learn-more {
-  text-decoration: none;
-  background: transparent;
-  color: $buttonColor;
-  border: 2px solid $buttonColor;
-  box-sizing: border-box;
-}
-
-.project-card-footer a.project-tag-learn-more:hover {
-  background: rgba($buttonColor, 0.08);
-  color: $buttonHover;
-  border-color: $buttonHover;
-}
-
-.project-card-dark .project-card-footer a.project-tag-learn-more {
-  color: lighten($buttonColor, 35%);
-  border-color: lighten($buttonColor, 35%);
-}
-
-.project-card-dark .project-card-footer a.project-tag-learn-more:hover {
-  background: rgba(255, 255, 255, 0.06);
-  color: lighten($buttonHover, 20%);
-  border-color: lighten($buttonHover, 20%);
 }
 
 @media (max-width: 768px) {

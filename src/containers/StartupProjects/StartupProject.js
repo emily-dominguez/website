@@ -69,16 +69,15 @@ export default function StartupProject() {
                     <div className="project-card-footer">
                       {project.slug && project.caseStudy ? (
                         <a
-                          className={
-                            isDark
-                              ? "dark-mode project-tag project-tag-learn-more"
-                              : "project-tag project-tag-learn-more"
-                          }
+                          className="project-learn-more-btn"
                           href={buildProjectDetailUrl(project.slug)}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
                           Learn more
+                          <span className="project-learn-more-btn__arrow" aria-hidden="true">
+                            →
+                          </span>
                         </a>
                       ) : null}
                       {project.footerLink
