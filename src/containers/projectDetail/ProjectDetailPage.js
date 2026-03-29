@@ -55,7 +55,7 @@ export default function ProjectDetailPage() {
       >
         <div className="project-detail-top">
           <a className="project-detail-back" href={homeHashHref()}>
-            ← Back to portfolio
+            ← Back to main page
           </a>
           <ToggleSwitch />
         </div>
@@ -75,7 +75,7 @@ export default function ProjectDetailPage() {
       >
         <div className="project-detail-top">
           <a className="project-detail-back" href={homeHashHref()}>
-            ← Back to portfolio
+            ← Back to main page
           </a>
           <ToggleSwitch />
         </div>
@@ -103,7 +103,7 @@ export default function ProjectDetailPage() {
     >
       <div className="project-detail-top">
         <a className="project-detail-back" href={homeHashHref()}>
-          ← Back to portfolio
+          ← Back to main page
         </a>
         <ToggleSwitch />
       </div>
