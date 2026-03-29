@@ -1,14 +1,20 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.e59ab417.css",
-    "main.js": "/website/static/js/main.0ef79804.js",
+    "main.css": "/website/static/css/main.f5745b47.css",
+    "main.js": "/website/static/js/main.80f5ac10.js",
     "static/css/64.bba8fa55.chunk.css": "/website/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/website/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/website/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.bda0d7b7.chunk.js": "/website/static/js/769.bda0d7b7.chunk.js",
     "static/media/emily-story.jpeg": "/website/static/media/emily-story.9f233e30a4df9b554263.jpeg",
+    "static/media/growfi.png": "/website/static/media/growfi.aeb9d3fca5166aa3c526.png",
+    "static/media/growfi_solution.png": "/website/static/media/growfi_solution.9cbcc938ab0835c818e2.png",
     "static/media/zesf.jpg": "/website/static/media/zesf.7f5e962dd99644948e49.jpg",
+    "static/media/bump_marketing.png": "/website/static/media/bump_marketing.27389a1e8e648f1f11a0.png",
     "static/media/emily.jpeg": "/website/static/media/emily.e06268569b6f473a5dd7.jpeg",
+    "static/media/bump_solution.png": "/website/static/media/bump_solution.1004c3a38ebef937c28c.png",
+    "static/media/bump.png": "/website/static/media/bump.13765cf6006616e4754b.png",
+    "static/media/growfi_marketing.png": "/website/static/media/growfi_marketing.ac9774fdb85f8acf3d15.png",
     "static/media/Montserrat-Regular.ttf": "/website/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/Agustina.woff": "/website/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/apple_logo.jpg": "/website/static/media/apple_logo.0572c9e54162f2504bb3.jpg",
@@ -17,19 +23,18 @@
     "static/media/contactMailDark.svg": "/website/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
     "static/media/microsoft_logo.jpeg": "/website/static/media/microsoft_logo.f710cd216cdfa92ccec9.jpeg",
     "static/media/ms.jpg": "/website/static/media/ms.5482d7523e2c2f83c41b.jpg",
-    "static/media/growfi_logo.png": "/website/static/media/growfi_logo.7435430989871725cb9c.png",
     "static/media/skill.svg": "/website/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "index.html": "/website/index.html",
     "static/media/talksCardBack.svg": "/website/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.e59ab417.css.map": "/website/static/css/main.e59ab417.css.map",
-    "main.0ef79804.js.map": "/website/static/js/main.0ef79804.js.map",
+    "main.f5745b47.css.map": "/website/static/css/main.f5745b47.css.map",
+    "main.80f5ac10.js.map": "/website/static/js/main.80f5ac10.js.map",
     "64.bba8fa55.chunk.css.map": "/website/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/website/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/website/static/css/769.b3cbb36b.chunk.css.map",
     "769.bda0d7b7.chunk.js.map": "/website/static/js/769.bda0d7b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e59ab417.css",
-    "static/js/main.0ef79804.js"
+    "static/css/main.f5745b47.css",
+    "static/js/main.80f5ac10.js"
   ]
 }
